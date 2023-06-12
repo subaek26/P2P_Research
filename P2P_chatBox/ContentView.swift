@@ -18,7 +18,7 @@ struct ContentView: View {
                     .bold()
                 Image(systemName: "text.bubble.fill")
                     .font(.system(size: 26))
-                    .foregroundColor(Color.mint)
+                    .foregroundColor(Color.blue)
             }
             ScrollView{
                 ForEach(messages, id: \.self) {
@@ -29,7 +29,7 @@ struct ContentView: View {
                             Text(newMessage)
                                 .padding()
                                 .foregroundColor(.white)
-                                .background(.mint.opacity(0.8))
+                                .background(.blue.opacity(0.8))
                                 .padding(.horizontal, 16)
                                 .cornerRadius(0)
                                 .padding(.bottom, 10)
@@ -39,7 +39,7 @@ struct ContentView: View {
                             Text(message)
                                 .padding()
                                 .foregroundColor(.white)
-                                .background(.mint.opacity(0.8))
+                                .background(.gray.opacity(0.8))
                                 .padding(.horizontal, 16)
                                 .cornerRadius(0)
                                 .padding(.bottom, 10)
@@ -67,7 +67,7 @@ struct ContentView: View {
                 }
                 .font(.system(size:26))
                 .padding(.horizontal, 10)
-                .foregroundColor(Color.mint)
+                .foregroundColor(Color.blue)
             }
             .padding()
         }
