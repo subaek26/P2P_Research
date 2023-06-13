@@ -18,7 +18,7 @@ struct LoginPageView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Color.blue
+                Color.mint
                     .ignoresSafeArea()
                 Circle()
                     .scale(1.7)
@@ -45,10 +45,10 @@ struct LoginPageView: View {
                         }
                     .foregroundColor(.white)
                     .frame(width: 300, height: 50)
-                    .background(Color.blue)
+                    .background(Color.mint)
                     .cornerRadius(10)
                     
-                    NavigationLink(destination: Text("You are logged in @\(username)"), isActive: $showingLoginScreen) {
+                    NavigationLink(destination: ListNameView(), isActive: $showingLoginScreen) {
                         EmptyView()
                     }
                 }
