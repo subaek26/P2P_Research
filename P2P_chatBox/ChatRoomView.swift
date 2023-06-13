@@ -137,7 +137,7 @@ struct ChatRoomView: View {
                             }
                             .frame(width: viewWidth * 0.7, alignment: isReceived ? .leading : .trailing)
                             .padding(.vertical)
-                            // .background(Color.blue)
+                            //.background(Color.blue)
                         }
                         .frame(maxWidth: .infinity, alignment: isReceived ? .leading : .trailing)
                         .id(message.id) // improtant for automatic scrolling later
