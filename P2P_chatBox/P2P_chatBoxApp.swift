@@ -5,6 +5,8 @@
 //  Created by Sunny Baek on 6/9/23.
 //
 
+// change all the colors to blue???
+
 import SwiftUI
 
 @main
