@@ -1,0 +1,64 @@
+//
+//  ListNameView.swift
+//  P2P_chatBox
+//
+//  Created by Sunny Baek on 6/12/23.
+//
+
+import SwiftUI
+
+struct ListNameView: View {
+    @StateObject var ViewModel = ChatsViewModel()
+    
+    let chats = Chat.sampleChat
+    
+    @State private var query = ""
+    
+    var body: some View {
+        NavigationView{
+            List {ForEach(ViewModel.getSortedFiltereChats(query: query)) { chat in
+                ZStack{
+                    ChatRow(chat: chat)
+                    NavigationLink(destination: {
+                        ChatRoomView(chat: chat)
+                            .environmentObject(ViewModel)
+                    }) {
+                        EmptyView()
+                    }
+                    .buttonStyle(PlainButtonStyle())
+                    .frame(width: 0)
+                    .opacity(0)
+                }
+                .swipeActions(edge: .leading, allowsFullSwipe: true) {
+                    Button(action: {
+                        ViewModel.markAsUnread(!chat.hasUnreadMessage, chat: chat)
+                    }) {
+                        if chat.hasUnreadMessage {
+                            Label("Read", systemImage: "pencil.circle")
+                        } else {
+                            Label("Read", systemImage: "circle.fill")
+                        }
+                    }
+                }.tint(.mint)
+            }
+            }
+            .listStyle(PlainListStyle())
+            .searchable(text: $query)
+            .navigationTitle("Friends")
+            .navigationBarItems(trailing: Button(action: {}){
+                Image(systemName: "plus.message")
+                    .foregroundColor(Color.mint)
+                
+            })
+        }
+    }
+}
+        
+        // two maps to handle the user names and IDs
+        
+        
+struct ListNameView_Previews: PreviewProvider {
+            static var previews: some View {
+                ListNameView()
+            }
+        }
