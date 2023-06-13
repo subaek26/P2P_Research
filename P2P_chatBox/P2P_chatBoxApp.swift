@@ -13,7 +13,7 @@ import SwiftUI
 struct P2P_chatBoxApp: App {
     var body: some Scene {
         WindowGroup {
-            ListNameView()
+            LoginPageView()
         }
     }
 }

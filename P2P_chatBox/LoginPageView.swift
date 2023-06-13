@@ -9,9 +9,7 @@ import SwiftUI
 
 struct LoginPageView: View {
     @State private var username = ""
-    @State private var password = ""
     @State private var wrongUsername: Float = 0
-    @State private var wrongPassword: Float  = 0
     @State private var showingLoginScreen = false
     
     
@@ -26,7 +24,7 @@ struct LoginPageView: View {
                 Circle()
                     .scale(1.35)
                     .foregroundColor(.white)
-
+                
                 VStack {
                     Text("Login")
                         .font(.largeTitle)
@@ -41,8 +39,8 @@ struct LoginPageView: View {
                         .border(.red, width: CGFloat(wrongUsername))
                     
                     Button("Login") {
-                        authenticateUser(username: username, password: password)
-                        }
+                        authenticateUser(username: username)
+                    }
                     .foregroundColor(.white)
                     .frame(width: 300, height: 50)
                     .background(Color.mint)
@@ -56,7 +54,7 @@ struct LoginPageView: View {
         }
     }
     
-    func authenticateUser(username: String, password: String) {
+    func authenticateUser(username: String) {
         if username.lowercased() != "" {
             wrongUsername = 0
             showingLoginScreen = true
