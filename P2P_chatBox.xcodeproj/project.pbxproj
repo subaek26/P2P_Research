@@ -16,6 +16,7 @@
 		8BFD81602A381182002DB632 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFD815F2A381182002DB632 /* ChatViewModel.swift */; };
 		8BFD81622A3811AC002DB632 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFD81612A3811AC002DB632 /* DateHelper.swift */; };
 		8BFD81642A3811D3002DB632 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFD81632A3811D3002DB632 /* ChatModel.swift */; };
+		8BFD81662A3811F7002DB632 /* ChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFD81652A3811F7002DB632 /* ChatRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		8BFD815F2A381182002DB632 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 		8BFD81612A3811AC002DB632 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		8BFD81632A3811D3002DB632 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		8BFD81652A3811F7002DB632 /* ChatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				8BFD815F2A381182002DB632 /* ChatViewModel.swift */,
 				8BFD81612A3811AC002DB632 /* DateHelper.swift */,
 				8BFD81632A3811D3002DB632 /* ChatModel.swift */,
+				8BFD81652A3811F7002DB632 /* ChatRow.swift */,
 				8B25B8152A33BE7400503ECB /* Assets.xcassets */,
 				8B25B8172A33BE7400503ECB /* P2P_chatBox.entitlements */,
 				8B25B8182A33BE7400503ECB /* Preview Content */,
@@ -154,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BFD81662A3811F7002DB632 /* ChatRow.swift in Sources */,
 				8B25B8142A33BE7100503ECB /* ContentView.swift in Sources */,
 				8BFD815E2A381149002DB632 /* ListNameView.swift in Sources */,
 				8B25B8122A33BE7100503ECB /* P2P_chatBoxApp.swift in Sources */,
