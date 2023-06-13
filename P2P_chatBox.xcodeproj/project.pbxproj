@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8B25B8122A33BE7100503ECB /* P2P_chatBoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B25B8112A33BE7100503ECB /* P2P_chatBoxApp.swift */; };
-		8B25B8142A33BE7100503ECB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B25B8132A33BE7100503ECB /* ContentView.swift */; };
 		8B25B8162A33BE7400503ECB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B25B8152A33BE7400503ECB /* Assets.xcassets */; };
 		8B25B81A2A33BE7400503ECB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B25B8192A33BE7400503ECB /* Preview Assets.xcassets */; };
 		8BFD815C2A381111002DB632 /* ChatRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFD815B2A381111002DB632 /* ChatRoomView.swift */; };
@@ -22,7 +21,6 @@
 /* Begin PBXFileReference section */
 		8B25B80E2A33BE7100503ECB /* P2P_chatBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = P2P_chatBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B25B8112A33BE7100503ECB /* P2P_chatBoxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2P_chatBoxApp.swift; sourceTree = "<group>"; };
-		8B25B8132A33BE7100503ECB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8B25B8152A33BE7400503ECB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B25B8172A33BE7400503ECB /* P2P_chatBox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = P2P_chatBox.entitlements; sourceTree = "<group>"; };
 		8B25B8192A33BE7400503ECB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -65,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				8B25B8112A33BE7100503ECB /* P2P_chatBoxApp.swift */,
-				8B25B8132A33BE7100503ECB /* ContentView.swift */,
 				8BFD815B2A381111002DB632 /* ChatRoomView.swift */,
 				8BFD815D2A381149002DB632 /* ListNameView.swift */,
 				8BFD815F2A381182002DB632 /* ChatViewModel.swift */,
@@ -158,7 +155,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BFD81662A3811F7002DB632 /* ChatRow.swift in Sources */,
-				8B25B8142A33BE7100503ECB /* ContentView.swift in Sources */,
 				8BFD815E2A381149002DB632 /* ListNameView.swift in Sources */,
 				8B25B8122A33BE7100503ECB /* P2P_chatBoxApp.swift in Sources */,
 				8BFD81642A3811D3002DB632 /* ChatModel.swift in Sources */,
