@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct LoginPageView: View {
+    // declaring a username to its own ID
+    @State public var username: String = UserDefaults.standard.string(forKey: UUID().uuidString) ?? "" // take cares of optional but cannot be empty...
+    
     
     var body: some View {
-        
+        NavigationView {
+            
+        }
     }
 }
 
