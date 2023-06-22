@@ -55,6 +55,22 @@ class ChatViewModel: ObservableObject {
         "Josh" : chatsForUser3
     ]
     
-    // chaning the username to acess the value(chats) of the key(username)
+    // changing the username to acess the value(chats) of the key(username)
     @Published var chats: [P2PChat] = chatMap["Lily"] ?? [] // took care of optional
+    
+    // changing the username to update the chat everytime a new user logs in
+    func changeUsername(username: String) -> [P2PChat] {
+        self.chats = ChatViewModel.chatMap[username] ?? [] // took care of optional
+        return chats
+    }
+    
+    // function that allows users to send messages
+    func sendMessage(_ text: String, in chat: P2PChat) -> P2PMessage? {
+        if let index = chats.firstIndex(where: { $0.id == chat.id}) {
+            let message = P2PMessage(text, type: .Sent)
+            chats[index].messages.append(message)
+            return message
+        }
+        return nil
+    }
 }
