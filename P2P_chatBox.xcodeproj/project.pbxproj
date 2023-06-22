@@ -10,6 +10,8 @@
 		8B25B8122A33BE7100503ECB /* P2P_chatBoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B25B8112A33BE7100503ECB /* P2P_chatBoxApp.swift */; };
 		8B25B8162A33BE7400503ECB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B25B8152A33BE7400503ECB /* Assets.xcassets */; };
 		8B25B81A2A33BE7400503ECB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B25B8192A33BE7400503ECB /* Preview Assets.xcassets */; };
+		8BDB846D2A41FF2B0095C451 /* LoginPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDB846C2A41FF2B0095C451 /* LoginPageView.swift */; };
+		8BDB846F2A44D4390095C451 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDB846E2A44D4390095C451 /* ChatModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,7 +20,8 @@
 		8B25B8152A33BE7400503ECB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B25B8172A33BE7400503ECB /* P2P_chatBox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = P2P_chatBox.entitlements; sourceTree = "<group>"; };
 		8B25B8192A33BE7400503ECB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		8BDB84672A38FFB50095C451 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		8BDB846C2A41FF2B0095C451 /* LoginPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageView.swift; sourceTree = "<group>"; };
+		8BDB846E2A44D4390095C451 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +38,6 @@
 		8B25B8052A33BE7100503ECB = {
 			isa = PBXGroup;
 			children = (
-				8BDB84672A38FFB50095C451 /* MyPlayground.playground */,
 				8B25B8102A33BE7100503ECB /* P2P_chatBox */,
 				8B25B80F2A33BE7100503ECB /* Products */,
 			);
@@ -53,6 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				8B25B8112A33BE7100503ECB /* P2P_chatBoxApp.swift */,
+				8BDB846C2A41FF2B0095C451 /* LoginPageView.swift */,
+				8BDB846E2A44D4390095C451 /* ChatModel.swift */,
 				8B25B8152A33BE7400503ECB /* Assets.xcassets */,
 				8B25B8172A33BE7400503ECB /* P2P_chatBox.entitlements */,
 				8B25B8182A33BE7400503ECB /* Preview Content */,
@@ -139,6 +143,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B25B8122A33BE7100503ECB /* P2P_chatBoxApp.swift in Sources */,
+				8BDB846D2A41FF2B0095C451 /* LoginPageView.swift in Sources */,
+				8BDB846F2A44D4390095C451 /* ChatModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
