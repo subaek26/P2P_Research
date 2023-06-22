@@ -9,8 +9,8 @@ import Foundation
 
 struct P2PChat: Identifiable {
     var id: UUID { person.id } // assigning ID to each user
-    let person: Person // assigning person to struct Person
-    var messages: [Message] // assigning messages to an Array of messages
+    let person: P2PPerson // assigning person to struct Person
+    var messages: [P2PMessage] // assigning messages to an Array of messages
 }
 
 struct P2PPerson: Identifiable {
