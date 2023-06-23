@@ -24,8 +24,41 @@ struct ListofChatView: View {
     }
     
     var body: some View {
+        List{ chat in
         ZStack{
-            ChatRow
+            ChatRow(P2PChat: chat)
+            NavigationLink(destination: {
+                ChatRoomView()
+            })
         }
+    }
+}
+
+
+struct ChatRow: View {
+    
+    let chat: P2PChat
+    
+    var body: some View {
+        HStack {
+            ZStack {
+                VStack(alignment: .leading, spacing: 5) {
+                    HStack{
+                        Text(chat.person.name)
+                            .bold()
+                        Spacer()
+                    }
+                    HStack {
+                        Text(chat.messages.last?.text ?? "")
+                            .foregroundColor(.gray)
+                            .lineLimit(2)
+                            .frame(height: 50, alignment: .top)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.trailing, 40)
+                    }
+                }
+            }
+        }
+        .frame(height:80)
     }
 }
