@@ -13,6 +13,7 @@
 		8BDB846D2A41FF2B0095C451 /* LoginPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDB846C2A41FF2B0095C451 /* LoginPageView.swift */; };
 		8BDB846F2A44D4390095C451 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDB846E2A44D4390095C451 /* ChatModel.swift */; };
 		8BDB84712A44D73D0095C451 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDB84702A44D73D0095C451 /* ChatViewModel.swift */; };
+		8BDB84732A45EB240095C451 /* ListOfChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDB84722A45EB240095C451 /* ListOfChatView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8BDB846C2A41FF2B0095C451 /* LoginPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageView.swift; sourceTree = "<group>"; };
 		8BDB846E2A44D4390095C451 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 		8BDB84702A44D73D0095C451 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		8BDB84722A45EB240095C451 /* ListOfChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfChatView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				8B25B8112A33BE7100503ECB /* P2P_chatBoxApp.swift */,
 				8BDB846C2A41FF2B0095C451 /* LoginPageView.swift */,
+				8BDB84722A45EB240095C451 /* ListOfChatView.swift */,
 				8BDB846E2A44D4390095C451 /* ChatModel.swift */,
 				8BDB84702A44D73D0095C451 /* ChatViewModel.swift */,
 				8B25B8152A33BE7400503ECB /* Assets.xcassets */,
@@ -148,6 +151,7 @@
 				8B25B8122A33BE7100503ECB /* P2P_chatBoxApp.swift in Sources */,
 				8BDB846D2A41FF2B0095C451 /* LoginPageView.swift in Sources */,
 				8BDB84712A44D73D0095C451 /* ChatViewModel.swift in Sources */,
+				8BDB84732A45EB240095C451 /* ListOfChatView.swift in Sources */,
 				8BDB846F2A44D4390095C451 /* ChatModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
